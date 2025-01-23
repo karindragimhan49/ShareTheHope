@@ -1,52 +1,59 @@
-🌟 ShareTheHope 🌟
+ShareTheHope 🌟
+Overview
 
-Building a bridge of hope, one donation at a time.
-🖋️ Overview
+ShareTheHope is a platform designed to connect donors with recipients, simplifying the act of giving while fostering collaboration and compassion. The system enables donors to list items for donation and allows recipients to browse and claim items easily. Admins can oversee the operations, ensuring smooth transactions.
+Live Demo
 
-ShareTheHope is a platform designed to connect donors with recipients, simplifying the act of giving while fostering collaboration and compassion. The platform also enables schools to list their needs, ensuring donations reach the right hands effectively.
-Features:
+    Frontend: Frontend Demo Link
+    Backend: Backend API Endpoint
 
-    Donors: Effortlessly list items for donation.
-    Recipients: Browse and claim items with a shop-like experience.
-    Admins: Seamlessly oversee and manage operations.
-    Schools: Collaborate to receive and manage donations directly.
+Screenshots
 
-🎯 Key Highlights
+    Screenshot 1
+    Screenshot 2
+    Screenshot 3
 
-    Role-Based System: Separate dashboards for Admins, Donors, and Recipients.
-    Modern UI: Built with React, Tailwind CSS, and Vite for sleek responsiveness.
-    Secure Authentication: Powered by JWT for safe access.
-    MERN Stack: Ensures scalability and performance.
+Technologies Used
 
-🛠️ Technologies Used
-Category	Technologies
-Frontend	React.js, Vite, Tailwind CSS
-Backend	Node.js, Express.js, MongoDB
-Authentication	JSON Web Tokens (JWT), bcrypt.js
-📂 Project Structure
+    Frontend: React.js, Tailwind CSS
+    Backend: Node.js, Express.js
+    Database: MongoDB
+    Authentication: JWT (JSON Web Tokens)
+    Hosting: Vercel (Frontend), Render (Backend)
 
-ShareTheHope/  
-├── backend/  
-│   ├── config/          # Database and environment setup  
-│   ├── controllers/     # Application logic (e.g., auth, donations)  
-│   ├── models/          # Database schemas (User, Donations, etc.)  
-│   ├── routes/          # API endpoints  
-│   └── index.js         # Entry point for backend server  
-├── frontend/  
-│   ├── public/          # Static files  
-│   ├── src/             # Source files  
-│   │   ├── components/  # Reusable React components  
-│   │   ├── pages/       # Page-level components  
-│   │   ├── utils/       # Helper functions  
-│   │   └── App.jsx      # Main app file  
-│   └── vite.config.js   # Vite configuration  
-├── .env                 # Environment variables  
-└── README.md            # Project documentation  
+Features
 
-🚀 Installation and Setup
+    Role-Based System: Different dashboards for Admins, Donors, and Recipients.
+    Secure Authentication: JWT-based user authentication.
+    Donation Management: Users can list donations and claim items.
+
+Assumptions
+
+    Donors list items for donation.
+    Recipients browse and claim items.
+    Admins oversee the platform's operations.
+
+Project Structure
+
+ShareTheHope/
+├── backend/                 # Backend code (Node.js & Express.js)
+│   ├── models/              # MongoDB models
+│   ├── routes/              # Express routes
+│   ├── .env                 # Environment variables
+│   └── index.js             # Main server entry point
+│
+├── frontend/                # Frontend code (React.js)
+│   ├── src/                 # Source files
+│   │   ├── components/      # Reusable React components
+│   │   ├── pages/           # Page components
+│   │   ├── App.jsx          # Main app file
+│   │   └── index.jsx        # Entry point
+│
+├── README.md                # Project documentation
+└── .gitignore               # Git ignore rules
+
+Installation and Setup
 Prerequisites
-
-Ensure you have the following installed:
 
     Node.js (v14 or higher)
     MongoDB (local or cloud)
@@ -54,77 +61,53 @@ Ensure you have the following installed:
 
 Backend Setup
 
-    Navigate to the backend directory:
+    Clone the repository:
 
-cd backend
+git clone https://github.com/karindragimhan49/ShareTheHope.git
+cd ShareTheHope/backend
 
 Install dependencies:
 
-npm install  
+npm install
 
-Create a .env file in the backend directory with the following content:
+Create a .env file in the backend directory and add your environment variables:
 
-MONGO_URI=<your-mongodb-uri>  
-JWT_SECRET=<your-jwt-secret>  
-PORT=5000  
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
 
 Start the backend server:
 
-    node index.js  
-
-    The backend runs at http://localhost:5000.
+    node index.js
 
 Frontend Setup
 
     Navigate to the frontend directory:
 
-cd frontend  
+cd ../frontend
 
 Install dependencies:
 
-npm install  
+npm install
 
 Start the frontend development server:
 
-    npm run dev  
+    npm run dev
 
-    The frontend runs at http://localhost:5173.
+Usage
 
-📋 API Endpoints
-Authentication
+    Access the application via the frontend live demo link or localhost if running locally.
+    Donors can list their donations and view their history.
+    Recipients can browse donations and claim items.
+    Admins can manage the entire system.
 
-    POST /api/auth/register: Registers a new user.
-    POST /api/auth/login: Authenticates a user.
+Environment Variables
+Backend
 
-Donations
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
 
-    GET /api/donations: Retrieves a list of donations.
-    POST /api/donations: Adds a new donation.
+Frontend
 
-🛠️ Future Enhancements
-
-    Add notifications for donation updates.
-    Implement an admin dashboard.
-    Integrate payment gateways for monetary donations.
-
-🤝 Contributing
-
-    Fork the repository.
-    Clone it to your local machine:
-
-git clone https://github.com/karindragimhan49/ShareTheHope.git  
-
-Create a new branch for your feature:
-
-git checkout -b feature-name  
-
-Commit your changes and push the branch:
-
-    git push origin feature-name  
-
-📄 License
-
-This project is licensed under the MIT License.
-🌟 Start sharing hope today!
-
-Together, we can make a difference. 💖
+    No .env file is required for the frontend.
