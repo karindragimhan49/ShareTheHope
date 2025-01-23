@@ -11,11 +11,11 @@
 
 ## Screenshots
 
-![ShareTheHope_Screenshot1](https://github.com/yourusername/ShareTheHope/assets/screenshot1)
+![ShareTheHope_Screenshot1](https://github.com/karindragimhan49/ShareTheHope/blob/main/frontend/src/assets/Screenshot%202025-01-22%20200945.png?raw=true)
 
-![ShareTheHope_Screenshot2](https://github.com/yourusername/ShareTheHope/assets/screenshot2)
+![ShareTheHope_Screenshot2](https://github.com/karindragimhan49/ShareTheHope/blob/main/frontend/src/assets/Screenshot%202025-01-22%20200419.png?raw=true)
 
-![ShareTheHope_Screenshot3](https://github.com/yourusername/ShareTheHope/assets/screenshot3)
+![ShareTheHope_Screenshot3](https://github.com/karindragimhan49/ShareTheHope/blob/main/frontend/src/assets/Screenshot%202025-01-22%20200945.png)
 
 ## Technologies Used
 
