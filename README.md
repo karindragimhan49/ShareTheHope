@@ -21,7 +21,7 @@
 
 ![ShareTheHope_Screenshot2](https://github.com/karindragimhan49/ShareTheHope/blob/main/frontend/src/assets/Screenshot%202025-01-23%20220214.png?raw=true)
 
-![ShareTheHope_Screenshot3](https://github.com/karindragimhan49/ShareTheHope/blob/main/frontend/src/assets/Screenshot%202025-01-22%20200232.png?raw=true)
+
 
 ## Technologies Used
 
