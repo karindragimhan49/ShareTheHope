@@ -29,11 +29,11 @@ const Register = () => {
       {/* Left Side: Image Section */}
       <div className="hidden lg:flex flex-1 relative overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/29125036/pexels-photo-29125036/free-photo-of-vibrant-red-autumn-leaves-against-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://images.pexels.com/photos/14325738/pexels-photo-14325738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Registration Background"
           className="object-cover h-full w-full"
           style={{
-            clipPath: "polygon(0 0, 75% 0, 100% 100%, 0% 100%)", // Keeping original angle divider
+            clipPath: "polygon(0 0, 120% 0, 110% 100%, 0% 100%)", // Keeping original angle divider
           }}
         />
       </div>
