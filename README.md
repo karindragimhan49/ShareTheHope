@@ -1,69 +1,87 @@
-#ShareTheHope 🌟
-##Overview
+# ShareTheHope - Donation Application
 
-ShareTheHope is a platform designed to connect donors with recipients, simplifying the act of giving while fostering collaboration and compassion. The system enables donors to list items for donation and allows recipients to browse and claim items easily. Admins can oversee the operations, ensuring smooth transactions.
-Live Demo
+## Overview
 
-    Frontend: Frontend Demo Link
-    Backend: Backend API Endpoint
+'ShareTheHope' is a donation application designed to collect funds and distribute them to schools across the country. The application includes features such as user authentication, donation tracking, and fund allocation management. The backend supports secure login and registration, while the frontend provides an intuitive user interface for managing donations.
 
-Screenshots
+## Live Demo
 
-    Screenshot 1
-    Screenshot 2
-    Screenshot 3
+- **Frontend**: [Vercel Live Demo](https://your-frontend-link.vercel.app/)
+- **Backend**: [Render API Endpoint](https://your-backend-api-endpoint.onrender.com)
 
-Technologies Used
+## Screenshots
 
-    Frontend: React.js, Tailwind CSS
-    Backend: Node.js, Express.js
-    Database: MongoDB
-    Authentication: JWT (JSON Web Tokens)
-    Hosting: Vercel (Frontend), Render (Backend)
+![ShareTheHope_Screenshot1](https://github.com/yourusername/ShareTheHope/assets/screenshot1)
 
-Features
+![ShareTheHope_Screenshot2](https://github.com/yourusername/ShareTheHope/assets/screenshot2)
 
-    Role-Based System: Different dashboards for Admins, Donors, and Recipients.
-    Secure Authentication: JWT-based user authentication.
-    Donation Management: Users can list donations and claim items.
+![ShareTheHope_Screenshot3](https://github.com/yourusername/ShareTheHope/assets/screenshot3)
 
-Assumptions
+## Technologies Used
 
-    Donors list items for donation.
-    Recipients browse and claim items.
-    Admins oversee the platform's operations.
+- **Frontend**: React.js, Tailwind CSS, Ant Design
+- **Backend**: Node.js, Express.js, MongoDB Atlas
+- **Authentication**: JWT (JSON Web Tokens)
+- **Hosting**: Vercel (Frontend), Render (Backend)
 
-Project Structure
+## Features
 
+- **User Authentication**:
+  - Secure login and registration for users to access donation and transaction features.
+  
+- **Donation Management**:
+  - Users can view available funds, make donations, and track their donation history.
+  - Admins can manage school fund allocations and approve donations.
+  
+- **Transaction History**:
+  - Users can view a history of all donations made, with details of the amount and recipient schools.
+  
+- **Secure Fund Transfer**:
+  - Donations are processed securely and allocated to the appropriate schools.
+
+## Assumptions
+
+- Donations are made to schools across the country.
+- User roles are defined (e.g., Donor, Admin).
+
+## Project Structure
+
+```plaintext
 ShareTheHope/
-├── backend/                 # Backend code (Node.js & Express.js)
-│   ├── models/              # MongoDB models
+│
+├── backend/                 # Backend code (Express.js, MongoDB)
+│   ├── models/              # Mongoose models
 │   ├── routes/              # Express routes
-│   ├── .env                 # Environment variables
-│   └── index.js             # Main server entry point
+│   ├── controllers/         # Backend logic
+│   ├── .env                 # Environment variables (excluded in .gitignore)
+│   └── server.js            # Main server file
 │
 ├── frontend/                # Frontend code (React.js)
 │   ├── src/                 # Source files
-│   │   ├── components/      # Reusable React components
-│   │   ├── pages/           # Page components
-│   │   ├── App.jsx          # Main app file
-│   │   └── index.jsx        # Entry point
+│   │   ├── components/      # React components
+│   │   ├── pages/           # Pages
+│   │   ├── App.js           # Main app component
+│   │   └── index.js         # Entry point
 │
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore rules
 
+
 Installation and Setup
+
+
 Prerequisites
 
-    Node.js (v14 or higher)
-    MongoDB (local or cloud)
-    Git
+    Node.js (v16 or higher)
+    npm or yarn
+    MongoDB Atlas account
+    JWT secret key for authentication
 
 Backend Setup
 
     Clone the repository:
 
-git clone https://github.com/karindragimhan49/ShareTheHope.git
+git clone https://github.com/yourusername/ShareTheHope.git
 cd ShareTheHope/backend
 
 Install dependencies:
@@ -72,13 +90,14 @@ npm install
 
 Create a .env file in the backend directory and add your environment variables:
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
 PORT=5000
+MONGO_URI=mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/ShareTheHope
+NODE_ENV=development
+JWT_SECRET=your-jwt-secret
 
 Start the backend server:
 
-    node index.js
+    npm start
 
 Frontend Setup
 
@@ -92,22 +111,33 @@ npm install
 
 Start the frontend development server:
 
-    npm run dev
+    npm start
+
+    Note: No .env file is required for the frontend setup as all configurations are managed through the backend.
 
 Usage
 
     Access the application via the frontend live demo link or localhost if running locally.
-    Donors can list their donations and view their history.
-    Recipients can browse donations and claim items.
-    Admins can manage the entire system.
+    Log in to create, manage, and view your donations and transaction history.
+    Admin users can approve donations and allocate funds to schools.
 
 Environment Variables
+
+
+Create a .env file in the backend directory and add the following variables:
+
+
 Backend
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
+
 PORT=5000
+MONGO_URI=mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/ShareTheHope
+NODE_ENV=development
+JWT_SECRET=your-jwt-secret
 
 Frontend
 
     No .env file is required for the frontend.
+
+
+Now the **Installation and Setup** section appears directly as plain text under the **Project Structur
