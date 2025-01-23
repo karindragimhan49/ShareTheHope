@@ -86,14 +86,3 @@ The frontend will run on http://localhost:5173.
 Donors: Log in, list items for donation, and manage your listings.
 Recipients: Browse donations, claim items, and track your claims.
 Admins: Oversee all donations, users, and claims to ensure smooth operations.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-🌐 Contact
-Project Creator: Karindra Gimhan
-
-GitHub: karindragimhan49
-Email: karindragimhan49@example.com
-Start sharing hope today! 💖 Together, we can make a difference.
-
