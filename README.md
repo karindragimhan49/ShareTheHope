@@ -45,7 +45,7 @@ bash
 Copy
 Edit
 npm install
-Create a .env file inside the backend directory with the following configuration:
+Create a .env file in the backend directory with the following keys:
 
 env
 Copy
@@ -86,35 +86,7 @@ The frontend will run on http://localhost:5173.
 Donors: Log in, list items for donation, and manage your listings.
 Recipients: Browse donations, claim items, and track your claims.
 Admins: Oversee all donations, users, and claims to ensure smooth operations.
-📡 API Endpoints
-Endpoint	Description
-POST /api/auth/register	Register a new user
-POST /api/auth/login	Log in a user
-GET /api/donations	Retrieve all donations
-POST /api/donations	Add a new donation
-GET /api/recipients	Retrieve all recipients
-For detailed API documentation, refer to your Postman collection or Swagger documentation (if implemented).
 
-🧑‍💻 Contributing
-We welcome contributions to make ShareTheHope even better! Follow these steps to contribute:
-
-Fork the repository.
-Create a feature branch:
-bash
-Copy
-Edit
-git checkout -b feature/your-feature-name
-Commit your changes:
-bash
-Copy
-Edit
-git commit -m "Add your message here"
-Push to your branch:
-bash
-Copy
-Edit
-git push origin feature/your-feature-name
-Submit a pull request for review.
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
@@ -122,5 +94,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Project Creator: Karindra Gimhan
 
 GitHub: karindragimhan49
-Email: karindragimhan69@gmail.com
+Email: karindragimhan49@example.com
 Start sharing hope today! 💖 Together, we can make a difference.
+
