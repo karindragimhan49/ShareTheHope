@@ -1,109 +1,130 @@
-# 🌟 ShareTheHope 🌟  
-*Building a bridge of hope, one donation at a time.*  
+🌟 ShareTheHope 🌟
 
----
+Building a bridge of hope, one donation at a time.
+🖋️ Overview
 
-## 🖋️ Overview  
-**ShareTheHope** is a platform designed to connect **donors** with **recipients**, simplifying the act of giving while fostering collaboration and compassion.  
+ShareTheHope is a platform designed to connect donors with recipients, simplifying the act of giving while fostering collaboration and compassion. The platform also enables schools to list their needs, ensuring donations reach the right hands effectively.
+Features:
 
-### Features:  
-- **Donors**: Effortlessly list items for donation.  
-- **Recipients**: Browse and claim items with a shop-like experience.  
-- **Admins**: Seamlessly oversee and manage operations.  
+    Donors: Effortlessly list items for donation.
+    Recipients: Browse and claim items with a shop-like experience.
+    Admins: Seamlessly oversee and manage operations.
+    Schools: Collaborate to receive and manage donations directly.
 
----
+🎯 Key Highlights
 
-## 🎯 Key Highlights  
-- **Role-Based System**: Separate dashboards for Admins, Donors, and Recipients.  
-- **Modern UI**: Built with **Tailwind CSS** for sleek responsiveness.  
-- **Secure Authentication**: Powered by **JWT** for safe access.  
-- **MERN Stack**: Ensures scalability and performance.  
+    Role-Based System: Separate dashboards for Admins, Donors, and Recipients.
+    Modern UI: Built with React, Tailwind CSS, and Vite for sleek responsiveness.
+    Secure Authentication: Powered by JWT for safe access.
+    MERN Stack: Ensures scalability and performance.
 
----
+🛠️ Technologies Used
+Category	Technologies
+Frontend	React.js, Vite, Tailwind CSS
+Backend	Node.js, Express.js, MongoDB
+Authentication	JSON Web Tokens (JWT), bcrypt.js
+📂 Project Structure
 
-## 🛠️ Technologies Used  
-| **Category**     | **Technologies**                       |  
-|-------------------|---------------------------------------|  
-| **Frontend**      | React.js, Vite, Tailwind CSS          |  
-| **Backend**       | Node.js, Express.js, MongoDB          |  
-| **Authentication**| JSON Web Tokens (JWT)                 |  
+ShareTheHope/  
+├── backend/  
+│   ├── config/          # Database and environment setup  
+│   ├── controllers/     # Application logic (e.g., auth, donations)  
+│   ├── models/          # Database schemas (User, Donations, etc.)  
+│   ├── routes/          # API endpoints  
+│   └── index.js         # Entry point for backend server  
+├── frontend/  
+│   ├── public/          # Static files  
+│   ├── src/             # Source files  
+│   │   ├── components/  # Reusable React components  
+│   │   ├── pages/       # Page-level components  
+│   │   ├── utils/       # Helper functions  
+│   │   └── App.jsx      # Main app file  
+│   └── vite.config.js   # Vite configuration  
+├── .env                 # Environment variables  
+└── README.md            # Project documentation  
 
----
+🚀 Installation and Setup
+Prerequisites
 
-## 📂 Project Structure  
+Ensure you have the following installed:
 
-ShareTheHope/ │ ├── backend/ # Backend code (Node.js & Express.js) │ ├── models/ # MongoDB models │ ├── routes/ # API routes │ ├── .env # Backend environment variables │ └── index.js # Entry point for backend │ ├── frontend/ # Frontend code (React.js) │ ├── src/ # Source files │ │ ├── components/ # Reusable components │ │ ├── pages/ # Page components │ │ ├── App.jsx # Main app file │ │ └── index.jsx # Entry point for frontend │ └── README.md # Project documentation
+    Node.js (v14 or higher)
+    MongoDB (local or cloud)
+    Git
 
-yaml
-Copy
-Edit
+Backend Setup
 
----
+    Navigate to the backend directory:
 
-## 🚀 Installation and Setup  
+cd backend
 
-### Prerequisites  
-Ensure you have the following installed:  
-- [Node.js](https://nodejs.org/) (v14 or higher)  
-- [MongoDB](https://www.mongodb.com/) (local or cloud)  
-- [Git](https://git-scm.com/)  
-
----
-
-### 1️⃣ Backend Setup  
-
-1. Clone the repository and navigate to the `backend` directory:  
-   ```bash
-   git clone https://github.com/karindragimhan49/ShareTheHope.git  
-   cd ShareTheHope/backend  
 Install dependencies:
 
-bash
-Copy
-Edit
 npm install  
-Create a .env file in the backend directory with the following:
 
-env
-Copy
-Edit
-MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_secret_key  
+Create a .env file in the backend directory with the following content:
+
+MONGO_URI=<your-mongodb-uri>  
+JWT_SECRET=<your-jwt-secret>  
 PORT=5000  
+
 Start the backend server:
 
-bash
-Copy
-Edit
-node index.js  
-The backend runs at http://localhost:5000.
+    node index.js  
 
-2️⃣ Frontend Setup
-Navigate to the frontend directory:
+    The backend runs at http://localhost:5000.
 
-bash
-Copy
-Edit
-cd ../frontend  
+Frontend Setup
+
+    Navigate to the frontend directory:
+
+cd frontend  
+
 Install dependencies:
 
-bash
-Copy
-Edit
 npm install  
+
 Start the frontend development server:
 
-bash
-Copy
-Edit
-npm run dev  
-The frontend runs at http://localhost:5173.
+    npm run dev  
 
-🌐 Usage
-Access the frontend to log in or register.
-Donors can list items for donation.
-Recipients can browse and claim available items.
-Admins can manage the entire system.
+    The frontend runs at http://localhost:5173.
+
+📋 API Endpoints
+Authentication
+
+    POST /api/auth/register: Registers a new user.
+    POST /api/auth/login: Authenticates a user.
+
+Donations
+
+    GET /api/donations: Retrieves a list of donations.
+    POST /api/donations: Adds a new donation.
+
+🛠️ Future Enhancements
+
+    Add notifications for donation updates.
+    Implement an admin dashboard.
+    Integrate payment gateways for monetary donations.
+
+🤝 Contributing
+
+    Fork the repository.
+    Clone it to your local machine:
+
+git clone https://github.com/karindragimhan49/ShareTheHope.git  
+
+Create a new branch for your feature:
+
+git checkout -b feature-name  
+
+Commit your changes and push the branch:
+
+    git push origin feature-name  
+
+📄 License
+
+This project is licensed under the MIT License.
 🌟 Start sharing hope today!
-Together, we can make a difference. 💖
 
+Together, we can make a difference. 💖
