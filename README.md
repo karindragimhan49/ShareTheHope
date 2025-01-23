@@ -44,6 +44,76 @@
 - Donations are made to schools across the country.
 - User roles are defined (e.g., Donor, Admin).
 
+## Installation and Setup
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB Atlas account
+- JWT secret key for authentication
+
+### Backend Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ShareTheHope.git
+   cd ShareTheHope/backend
+
+    Install dependencies:
+
+npm install
+
+Create a .env file in the backend directory and add your environment variables:
+
+PORT=5000
+MONGO_URI=mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/ShareTheHope
+NODE_ENV=development
+JWT_SECRET=your-jwt-secret
+
+Start the backend server:
+
+    npm start
+
+Frontend Setup
+
+    Navigate to the frontend directory:
+
+cd ../frontend
+
+Install dependencies:
+
+npm install
+
+Start the frontend development server:
+
+    npm start
+
+    Note: No .env file is required for the frontend setup as all configurations are managed through the backend.
+
+Usage
+
+    Access the application via the frontend live demo link or localhost if running locally.
+    Log in to create, manage, and view your donations and transaction history.
+    Admin users can approve donations and allocate funds to schools.
+
+Environment Variables
+
+Create a .env file in the backend directory and add the following variables:
+Backend
+
+PORT=5000
+MONGO_URI=mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/ShareTheHope
+NODE_ENV=development
+JWT_SECRET=your-jwt-secret
+
+Frontend
+
+    No .env file is required for the frontend.
+
+
+Just replace the placeholders with the actual links, usernames, passwords, or keys you are using in yo
+
 ## Project Structure
 
 ```plaintext
