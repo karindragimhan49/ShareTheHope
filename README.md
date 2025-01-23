@@ -67,24 +67,23 @@ ShareTheHope/
 └── .gitignore               # Git ignore rules
 
 
-Installation and Setup
+## Installation and Setup
 
+### Prerequisites
 
-Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB Atlas account
+- JWT secret key for authentication
 
-    Node.js (v16 or higher)
-    npm or yarn
-    MongoDB Atlas account
-    JWT secret key for authentication
+### Backend Setup
 
-Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ShareTheHope.git
+   cd ShareTheHope/backend
 
-    Clone the repository:
-
-git clone https://github.com/yourusername/ShareTheHope.git
-cd ShareTheHope/backend
-
-Install dependencies:
+    Install dependencies:
 
 npm install
 
@@ -123,12 +122,8 @@ Usage
 
 Environment Variables
 
-
 Create a .env file in the backend directory and add the following variables:
-
-
 Backend
-
 
 PORT=5000
 MONGO_URI=mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/ShareTheHope
@@ -140,4 +135,4 @@ Frontend
     No .env file is required for the frontend.
 
 
-Now the **Installation and Setup** section appears directly as plain text under the **Project Structur
+Just replace the placeholders with the actual links, usernames, passwords, or keys you are using in yo
